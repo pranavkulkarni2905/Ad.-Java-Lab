@@ -45,3 +45,43 @@ public class HelloWorld{
         
      }
 }
+/* Online Java Compiler and Editor */
+import java.util.*;
+public class HelloWorld{
+
+     public static void main(String []args){
+        
+        HashSet<String> set=new HashSet<>();
+        
+        //adding elements in arraylist
+        
+        set.add("Banana");
+        set.add("Apple");
+        set.add("Strawbery");
+        
+        
+        
+        System.out.println("HashSet is:"+set);
+        
+        //convert hashset into the array lkkist
+        ArrayList<String> list=new ArrayList<>(set);
+        
+        // check whether size is 3 or not
+    
+        
+        if(list.size()>=3){
+            System.out.println("Size of the arraylist is :"+list.size());
+            
+            //removing element from 2nd index
+            String n=list.remove(2);
+            System.out.println("Removed element is :"+n);
+            System.out.println("After removing arraylist is:"+list);
+            set.remove(2);
+            System.out.println("after removing HashSet is:"+set);
+        }
+        else{
+            System.out.println("Size of the arraylist is greater than 3");
+        }
+        
+     }
+}
